@@ -32,7 +32,7 @@ jobs:
           context: ./backend-springbootapp
           file: ./backend-springbootapp/backend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend-32396:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-backend-31688:latest
 
       # Step 5 — Build & Push Frontend Image
       - name: Build and Push Frontend Image
@@ -41,4 +41,4 @@ jobs:
           context: ./frontend-reactapp
           file: ./frontend-reactapp/frontend.Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend-32396:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/ansible-frontend-31688:latest
